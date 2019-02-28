@@ -147,10 +147,10 @@
 			<ul class='movie-list'></ul>
 		</section>
 		<section class='search-body'>
-			<form action="GET">
-				<input class='search-form' type="text" placeholder="搜索电影"">
+			
+				<input class='search-form' type="text" placeholder="搜索电影" onkeypress="if(event.keyCode == 13) showme()">
 				<button class="submit" type='button'>搜索</button>
-			</form>
+			
 			<ul class='movie-list'></ul>
 		</section>
 	</main>
@@ -178,11 +178,14 @@
 			console.log(2333)
 			getusData()
 		})
-		document.querySelector('button').onclick=function(e){
+		var btnclick=document.querySelector('button').onclick=showme
+		function showme(){
+		
 			$('.movie-list').eq(2).html('')
-			console.log(e)
+			console.log()
 			searchdata=$('.search-form').val()
 			console.log(searchdata)
+		
 			// getsearchData()
 			$.ajax({
 		        url: 'https://api.douban.com/v2/movie/search',
@@ -195,7 +198,7 @@
 		        	setsearchdata(ret)
 		        	console.log(2)
 		        }).fail(function(){console.log('error...')})		
-		    console.log(typeof(searchdata))
+		    console.log(10111)
 		}
 		function getusData(){
 			console.log(3222)
@@ -228,7 +231,7 @@
 				var basicstring ="<li>"
 					+'<a href="https://movie.douban.com/subject/1292052/">'
 					+ "<div class='img'>"
-					+ "<img src='http://img1.doubanio.com/view/photo/s_ratio_poster/public/p480747492.jpg'"  + "alt=''>"
+					+ "<img src='http://img1.doubanio.com/view/photo/s_ratio_poster/public/p480747492.jpg'"+"referrerpolicy ='never' "  + "alt=''>"
 					+ "</div>"
 					+ "<div class='introduction'>"
 						+ "<h2>肖申克的救赎</h2>"
@@ -271,7 +274,7 @@
 				var basicstring =" 			<li>"
 					+'<a href="https://movie.douban.com/subject/1292052/">'
 					+ "<div class='img'>"
-					+ "<img src='http://img1.doubanio.com/view/photo/s_ratio_poster/public/p480747492.jpg'"  + "alt=''>"
+					+ "<img src='http://img1.doubanio.com/view/photo/s_ratio_poster/public/p480747492.jpg'" +"referrerpolicy ='never' " + "alt=''>"
 					+ "</div>"
 					+ "<div class='introduction'>"
 						+ "<h2>肖申克的救赎</h2>"
@@ -314,7 +317,7 @@
 				var basicstring =" 			<li>"
 					+'<a href="https://movie.douban.com/subject/1292052/">'
 					+ "<div class='img'>"
-					+ "<img src='http://img1.doubanio.com/view/photo/s_ratio_poster/public/p480747492.jpg'"  + "alt=''>"
+					+ "<img src='http://img1.doubanio.com/view/photo/s_ratio_poster/public/p480747492.jpg'" +"referrerpolicy ='never' " + "alt=''>"
 					+ "</div>"
 					+ "<div class='introduction'>"
 						+ "<h2>肖申克的救赎</h2>"
