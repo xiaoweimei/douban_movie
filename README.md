@@ -1,5 +1,5 @@
 # douban_movie
-[预览地址](https://xiaoweimei.github.io/douban_movie/)
+[预览地址](https://xiahttps://xiaoweimei.github.io/douban_movie/douban_movie.html)
 ## 2019年2月28日所遇问题
 - 搜素按钮点击可以用，文本框输入直接按回车不起作用。
 - 解决方法，先在input里面绑定了回车触发点击事件，然后发现form表单有bug还不知道如何解决，删除form标签后一切回归正常
