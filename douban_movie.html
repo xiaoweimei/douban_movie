@@ -190,6 +190,8 @@
 			$.ajax({
 		        url: 'https://douban.uieee.com/v2/movie/search',
 		        data: {
+				start:0,
+				count:10,
 		        	q:searchdata
 		        },
 		        dataType: 'jsonp'
