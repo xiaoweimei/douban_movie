@@ -11,3 +11,4 @@
 - 解决方法，换用新的api https://douban.uieee.com
 ## 2019年8月21日所遇问题
 - 查询功能报错，出现404及`Provisional headers are shown`，具体等详细排查
+- api挂掉了我也没办法
