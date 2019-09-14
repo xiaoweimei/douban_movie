@@ -292,7 +292,7 @@
         $node.find('a').attr('href',movie.alt)
         $node.find('h2').text(movie.title)
         $node.find('.year').text(movie.year)
-	$node.find('.score').text(movie.subject.rating.average)
+	$node.find('.score').text(movie.rating.average)
         $node.find('.collection').text(movie.collect_count)
         $node.find('.story').text((movie.genres.join('、')))
         $node.find('.directors').text(function(){
@@ -336,7 +336,7 @@
         $node.find('a').attr('href',movie.alt)
         $node.find('h2').text(movie.title)
         $node.find('.year').text(movie.year)
-	$node.find('.score').text(movie.subject.rating.average)
+	$node.find('.score').text(movie.rating.average)
         $node.find('.collection').text(movie.collect_count)
         $node.find('.story').text((movie.genres.join('、')))
         $node.find('.directors').text(function(){
